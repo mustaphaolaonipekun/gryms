@@ -1,13 +1,490 @@
-body {
+:root {
+  --blue: #6f55f2;
+  --white: rgba(255, 255, 255, 1);
+  --brown: rgba(13, 8, 66, 0.52);
+  --primary: rgba(108, 108, 108, 1);
+  --blad: #132742;
+  --black: #000;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  user-select: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: aliceblue;
+}
+.gymsite {
+  /* background: #fffeee; */
+  background-image: linear-gradient(
+    90deg,
+    rgba(103, 101, 240, 1) 27%,
+    rgba(141, 141, 235, 1) 85%
+  );
+  padding: 2rem 9%;
+  margin: 3px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.34);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3px;
+  margin: 2px;
+  gap: 40px;
+  height: auto;
+  align-items: center;
+}
+
+.gymsite h2 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--black);
+  padding: 2px;
+  margin: 2px;
+}
+.gymsite h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--blad);
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  align-items: center;
+}
+.gymsite h5 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: var(--blad);
+  padding: 2px;
+  margin: 2px;
+}
+.gymsite p {
+  font-size: 13px;
+  font-weight: bolder;
+  color: var(--brown);
+  padding: 2px;
+  margin: 2px;
+}
+.gymsite span {
+  color: var(--blue);
+  border-bottom: 2px solid crimson;
+  /* border-start-start-radius: 50%; */
+  /* border-bottom-right-radius: 100%; */
+  border-bottom-right-radius: 70%;
+}
+.logo {
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--blue);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 2px;
+}
+.link a {
+  padding: 2px;
+  color: var(--brown);
+  font-size: 14px;
+  font-weight: bold;
+}
+.link bdo {
+  color: var(--blue);
+}
+.regis {
+  font-size: 15px;
+  color: #ffff;
+  background-color: var(--blue);
+  padding: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.regis h3 {
+  font-size: 15px;
+  padding: 3px;
+  text-align: center;
+}
+.menu {
+  font-size: 15px;
+  color: #ffff;
+  background-color: var(--blue);
+  padding: 4px;
+  border-radius: 4px;
+  border-color: var(--blue);
+  cursor: pointer;
+  display: none;
+}
+.boss {
+  font-size: 15px;
+  color: #ffff;
+  background-color: var(--blue);
+  padding: 2px;
+  border-radius: 4px;
+  width: 40%;
+  align-items: center;
+  cursor: pointer;
+}
+.boss h3 {
+  font-size: 15px;
+  padding: 2px;
+  text-align: center;
+}
+.join {
+  background-color: var(--blue);
+  padding: 2px;
+  border-radius: 4px;
+  width: 50%;
+  align-items: center;
+  cursor: pointer;
+  align-self: center;
+  margin-inline: 10px;
+  margin-block: 15px;
+}
+.join h3 {
+  color: #ffff;
+  font-size: 13px;
+  padding: 3px;
+  text-align: center;
+}
+.exercise {
+  margin-block: 20px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 2px;
+  align-items: center;
+}
+.healthy {
+  max-width: 250px;
+}
+.healthy h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 4px;
+  margin: 2px;
+}
+.healthy p {
+  font-size: 13px;
+  padding: 3px;
+  margin: 3px;
+}
+.start {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 2px;
+  padding: 2px;
+  margin-top: 15px;
+}
+.video {
+  padding: 2px;
+  font-size: 13px;
+}
+#play {
+  background-color: var(--white);
+  padding: 3px;
+  margin: 3px;
+  border-radius: 50%;
+  border-color: rgba(108, 108, 108, 1);
+  box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.34);
+}
+#play i {
+  font-size: 15px;
+  color: var(--blue);
+}
+.logimg {
+  margin-left: 60px;
+}
+.logimg img {
+  width: 70%;
+}
+.benefits {
+  align-items: center;
+  padding: 2px;
+  text-align: center;
+  margin-top: 30px;
+  margin: 2px;
+}
+.benefits img {
+  width: 25%;
+}
+.benefit {
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+  /* padding: 3px; */
+  height: auto;
+  width: auto;
+}
+.health {
+  width: 25%;
+  padding: 2px;
+  margin: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.34);
+  text-align: left;
+  align-items: center;
+  height: auto;
+}
+.shedule {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  /* gap: 10px; */
+  height: auto;
+  margin: 2px;
+  margin-block: 30px;
+}
+.sheimg img {
+  width: 80%;
+  padding: 2px;
+}
+.shed {
+  padding: 5px;
+  margin: 5px;
+  max-width: 350px;
+}
+.shed h2 {
+  font-size: 25px;
+  padding: 3px;
+  margin: 3px;
+}
+.shed p {
+  margin-block: 25px;
+}
+.pricing {
+  align-items: center;
+  padding: 2px;
+  text-align: center;
+  margin-top: 30px;
+  margin: 2px;
+}
+.prices {
+  padding: 3px;
+  margin: 2px;
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: space-around;
+  /* padding: 3px; */
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.price {
+  width: 25%;
+  padding: 2px;
+  margin: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.34);
+  text-align: left;
+  align-items: center;
+  height: auto;
+  text-align: center;
+}
+hr {
+  margin-block: 15px;
+}
+
+.pric {
+  text-align: center;
+  background: var(--blue);
+  border-radius: var(--blue);
+  color: #ffffff;
+}
+.pric h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.pric h4 {
+  text-align: center;
+  color: #ffffff;
+}
+.mon {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  gap: 1px;
+  text-align: center;
+  justify-content: center;
+}
+.price ul {
+  text-align: left;
+  padding: 2px;
+  display: block;
+}
+.price li {
+  list-style-type: disc;
+  font-size: 13px;
+  font-weight: bolder;
+  color: var(--blad);
+  margin-block: 5px;
+  /* text-align: center;
+  align-items: center; */
+  padding: 2px;
+}
+.sliders {
+  margin-block: 40px;
+  padding: 2px;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+.swiper {
+  width: 60%;
+}
+.slide_item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: left;
+  align-items: center;
+}
+.slide_img {
+  background-color: var(--blue);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.slide_img img {
+  width: 70%;
+}
+.slide_item h3 {
+  font-size: 15px;
+  margin-block: 10px;
+  padding: 3px;
+}
+.slide_item p {
+  font-size: 13px;
+  line-height: 28px;
+  padding: 3px;
+}
+.footer {
+  padding: 3px;
+  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3px;
+  align-items: center;
+  margin-top: 50px;
+}
+.foot {
+  max-width: 250px;
+  padding: 3px;
+  text-align: left;
+  cursor: pointer;
+}
+.foot h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--blue);
+}
+.email {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 2px;
+  cursor: pointer;
+}
+.mail {
+  border-radius: 4px;
+  padding: 3px;
+  border: 2px solid rgba(108, 108, 108, 1);
+  background-color: var(--white);
+}
+#send {
+  border-radius: 4px;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.copy{
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 590px) {
+    .gymsite h3{
+    font-size: 13px;
+  }
+  .gymsite h4 {
+    font-size: 13px;
+  }
+  .gymsite h5 {
+    font-size: 12px;
+  }
+
+  .gymsite p {
+    font-size: 11px;
+  }
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  .small{
+    position: absolute;
+    top: 15%;
+    right: 5px;
+    height: auto;
+    width: 40%;
+    align-items: center;
+    background-color:var(--blue);
+    padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.34);
+
+  }
+  .link a {
+    display: inline-block;
+    margin-block: 30px;
+    padding: 5px;
+    color: var(--white);
+  }
+  .link a:hover{
+    color: var(--blad);
+  border-bottom: 2px solid crimson;
+  border-bottom-right-radius: 70%; 
+  }
+  .link bdo{
+    display: inline-block;
+    margin-block: 10px;
+    padding: 5px;
+    color: var(--white);
+  }
+  .link bdo:hover{
+    color: var(--blad);
+  border-bottom: 2px solid crimson;
+  border-bottom-right-radius: 70%; 
+  }
 }
